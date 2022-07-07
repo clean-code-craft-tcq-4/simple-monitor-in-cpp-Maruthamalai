@@ -44,7 +44,7 @@ bool BMS_ValuesIsInRange(float value, float min, float max)
 
 bool BMS_ChargeRateIsOk(float chargeRate)
 {
-   if (chargeRate > BMS_CHARGE_RATE)
+   if (chargeRate*10 > BMS_CHARGE_RATE)
    {
       return false;
    }
